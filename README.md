@@ -64,9 +64,9 @@ Compute an exponentially weighthed average of the gradients and use that gradien
 Momentum:
 compute dW and db on the current minibatch.
 
-Combute $V_{dw} = \beta V_{dw} + (1-\beta)dW$ and
+Compute $V_{dw} = \beta V_{dw} + (1-\beta)dW$ and
 
-Combute $V_{db} = \beta V_{db} + (1-\beta)db$
+Compute $V_{db} = \beta V_{db} + (1-\beta)db$
 
 --> moving average for the derivatives of W and b
 
@@ -84,7 +84,7 @@ RMSprop: "root mean square" prop.
 
 Slow down learning on one direction and speed up in another one.
 
-On each iteration, use exponentially weithed average again:
+On each iteration, use exponentially weighed average again:
 exponentially weighted average of the squares of the derivatives
 
 $S_{dw} = \beta S_{dw} + (1-\beta)dW^2$
