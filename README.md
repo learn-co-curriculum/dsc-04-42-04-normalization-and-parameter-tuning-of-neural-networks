@@ -62,11 +62,11 @@ With that, here's some optimization algorithms that work faster than gradient de
 Compute an exponentially weighthed average of the gradients and use that gradient instead. The intuitive interpretation is that this will successively dampen oscillations, improving convergence.
 
 Momentum:
-compute dW and db on the current minibatch.
+Compute dW and db on the current minibatch.
 
-Combute $V_{dw} = \beta V_{dw} + (1-\beta)dW$ and
+Compute $V_{dw} = \beta V_{dw} + (1-\beta)dW$ and
 
-Combute $V_{db} = \beta V_{db} + (1-\beta)db$
+Compute $V_{db} = \beta V_{db} + (1-\beta)db$
 
 --> moving average for the derivatives of W and b
 
